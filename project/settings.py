@@ -33,8 +33,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # project apps
     'project',
     'pets',
+    # 3rd-party apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -103,6 +106,14 @@ TIME_ZONE = 'UTC'
 LANGUAGE_CODE = 'en-us'
 USE_I18N = True
 USE_L10N = True
+
+# ---- APPS SETTINGS --- #
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'PAGE_SIZE': 10,
+}
 
 try:
     from .local_settings import *
