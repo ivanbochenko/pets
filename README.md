@@ -13,3 +13,4 @@ Build and deploy a web application representing Dogs and Cats.
 - For this task, I decided not to create any Form and View for managing pets in userspace, but rather create a second, restricted admin ("owners' admin") which will do all the job for me. I just need to make some modifications:
     - Allow logging-in not-staff users (owners)
     - Restrict Pets to only owner's ones (owner cannot edit someone else's pets)
+- For CRUD, use django rest framework
