@@ -9,6 +9,7 @@ class PetAdmin(django_admin.ModelAdmin):
     list_filters = ['kind']
     search_fields = ['name']
 
+
 admin.register(Pet, PetAdmin)
 
 
@@ -17,10 +18,8 @@ class PetOwnerAdmin(PetAdmin):
     form = PetOwnerForm
 
     def get_queryset(self, request):
-        # restrict pets to only owner's ones
         return super().get_queryset(request).filter(owner=request.user)
 
-    # set necessary permissions by default
     def has_module_permission(self, *args, **kwargs):
         return True
 
@@ -34,7 +33,8 @@ class PetOwnerAdmin(PetAdmin):
         return True
 
     def save_model(self, request, obj, *args, **kwargs):
-        obj.owner = request.user  # set owner automatically
+        obj.owner = request.user
         super().save_model(request, obj, *args, **kwargs)
+
 
 owners_admin.register(Pet, PetOwnerAdmin)

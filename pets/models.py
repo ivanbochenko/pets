@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext as _
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.contrib.auth.models import User
 
 
@@ -8,10 +8,10 @@ class Pet(models.Model):
     kind = models.CharField(_('animal type'), max_length=8, choices=[
         ('cat', 'Cat'),
         ('dog', 'Dog'),
-    ])  # 'type' is reserved in python, so better use 'kind' as field name
+    ])
     name = models.CharField(_('name'), max_length=32)
     birthday = models.DateField(_('birthday'))
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)  # assume any User may be an owner
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['owner', 'birthday', 'name', 'pk']

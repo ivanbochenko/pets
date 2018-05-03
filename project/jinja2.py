@@ -1,5 +1,5 @@
 from jinja2 import Environment
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 
 def environment(**options):
