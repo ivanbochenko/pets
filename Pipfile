@@ -12,6 +12,7 @@ djangorestframework = "*"
 "jinja2" = "*"
 ipython = "*"
 ipdb = "*"
+django-heroku = "*"
 
 
 [dev-packages]

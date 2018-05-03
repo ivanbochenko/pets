@@ -120,3 +120,6 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# Configure Django App for Heroku.
+import django_heroku
