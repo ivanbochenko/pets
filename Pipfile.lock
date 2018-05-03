@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4cd57092db23cb3e2de9cb6a17e575c85427003ac449346eea8af0fa523a7b2e"
+            "sha256": "b44ae97fa6e1155eb4a7746629953ae29ebe0d5367934886b8377fa696332b9e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -84,6 +84,13 @@
             "markers": "python_version == '2.7'",
             "version": "==1.1.6"
         },
+        "gunicorn": {
+            "hashes": [
+                "sha256:7ef2b828b335ed58e3b64ffa84caceb0a7dd7c5ca12f217241350dec36a1d5dc",
+                "sha256:bc59005979efb6d2dd7d5ba72d99f8a8422862ad17ff3a16e900684630dd2a10"
+            ],
+            "version": "==19.8.1"
+        },
         "ipdb": {
             "hashes": [
                 "sha256:7081c65ed7bfe7737f83fa4213ca8afd9617b42ff6b3f1daf9a3419839a2a00a"
@@ -136,7 +143,7 @@
                 "sha256:8eb170f8d0d61825e09a95b38be068299ddeda82f35e96c3301a8a5e7604cb83",
                 "sha256:d1aa2a11ba7b8f7b21ab852b1fb5afb277e1bb99d5dfc663380b5015c0d80c5a"
             ],
-            "markers": "python_version in '2.6 2.7 3.2 3.3'",
+            "markers": "python_version == '3.3'",
             "version": "==2.3.2"
         },
         "pexpect": {

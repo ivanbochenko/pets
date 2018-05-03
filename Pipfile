@@ -13,6 +13,7 @@ djangorestframework = "*"
 ipython = "*"
 ipdb = "*"
 django-heroku = "*"
+gunicorn = "*"
 
 
 [dev-packages]
