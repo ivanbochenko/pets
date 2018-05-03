@@ -14,7 +14,7 @@ STATICFILES_FINDERS = [
 
 # ---- deployment-specific settings ---- #
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'pets-test.herokuapp.com']
 
 ADMINS = [('Alexandr', 'a@hobby4me.ru'), ]
 MANAGERS = []
