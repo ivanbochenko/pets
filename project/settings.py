@@ -16,7 +16,7 @@ STATICFILES_FINDERS = [
 DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'pets-test.herokuapp.com']
 
-ADMINS = [('Alexandr', 'a@hobby4me.ru'), ]
+ADMINS = [('Ivan', 'bochenkoivan@gmail.com'), ]
 MANAGERS = []
 INTERNAL_IPS = ['127.0.0.1', ]
 SECRET_KEY = 'onlpg3p$2+!xmb77pm&hq!!&1$a=t=j9_0aqur-%tm@!(2av9h'
@@ -49,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 
 
 TEMPLATES = [
